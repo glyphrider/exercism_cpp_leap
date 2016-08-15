@@ -16,9 +16,6 @@ namespace leap
 			operator bool();
 		protected:
 			bool is_divisible_by(int);
-			bool is_divisible_by_4();
-			bool is_divisible_by_100();
-			bool is_divisible_by_400();
 	};
 }
 
