@@ -10,9 +10,15 @@ namespace leap
 	class Leap
 	{
 			int _year;
+
 		public:
 			Leap(int year);
 			operator bool();
+		protected:
+			bool is_divisible_by(int);
+			bool is_divisible_by_4();
+			bool is_divisible_by_100();
+			bool is_divisible_by_400();
 	};
 }
 
