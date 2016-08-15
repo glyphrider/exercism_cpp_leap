@@ -7,7 +7,9 @@ namespace leap
 	Leap::Leap(const int &year):_year(year) {}
 	Leap::operator bool() const
 	{
-		return (is_divisible_by(400) || ((is_divisible_by(4)) && (!is_divisible_by(100))));
+		return (is_divisible_by(400) ||
+				((is_divisible_by(4)) &&
+				 (!is_divisible_by(100))));
 	}
 	bool Leap::is_divisible_by(int divisor) const
 	{
