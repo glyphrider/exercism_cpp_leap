@@ -9,13 +9,13 @@ namespace leap
 
 	class Leap
 	{
-			int _year;
+			const int _year;
 
 		public:
-			Leap(int year);
-			operator bool();
+			Leap(const int &year);
+			operator bool() const;
 		protected:
-			bool is_divisible_by(int);
+			bool is_divisible_by(int) const;
 	};
 }
 
